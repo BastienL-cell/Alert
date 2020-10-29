@@ -1,0 +1,77 @@
+* {
+    padding: 0; margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header h1 {
+    text-align: center;
+}
+
+.alert {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    animation: 5s setVisible;
+}
+.success {
+    background-color: rgb(24, 214, 24);
+}
+.success:hover {
+    background-color: rgb(65, 243, 65);
+}
+.failure {
+    background-color: rgb(196, 28, 28);
+}
+.failure:hover {
+    background-color: rgb(221, 56, 56);
+}
+.info {
+    background-color: rgb(46, 46, 204);
+}
+.info:hover {
+    background-color: rgb(63, 63, 231);
+}
+
+.btn {
+    padding: 10px;
+    min-width: 150px;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 45px auto;
+}
+.btn:hover {
+    /* color: #000; */
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+}
+footer p {
+    text-align: center;
+    padding: 15px;
+}
+
+
+@keyframes setVisible {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
